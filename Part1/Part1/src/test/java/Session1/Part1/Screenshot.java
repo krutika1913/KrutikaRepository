@@ -15,11 +15,12 @@ public class Screenshot extends Dynamic_code {
 		
 		//rules to take screenshot
 		
+		//create folder to store screenshots/evidences while doing testing
 		//tell driver to take screenshot
 		//use takescreenshot interface
 		//then create object of interface
 		//driver is reference variable of WebDriver interface
-		//with the help of ref. var. of takescreenshot interface use getScreenshot as method.
+		//with the help of ref. var. of takescreenshot interface use getScreenshotas method.
 	    //if we take screenshot then it is stored in the File format 
 		
 		launch_browser("Chrome");

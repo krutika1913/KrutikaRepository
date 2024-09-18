@@ -27,7 +27,21 @@ public class javascript_Executor extends Dynamic_code{
 		js.executeScript("window.scrollBy(0,document.body.scrollHeight)"); 
 		takescreenshotJS("after scrolling ss upto bottom");
 		
-//		driver.findElement(By.xpath(null));
+		driver.findElement(By.xpath("//a[text()=\"About Us\"]")).click();
+		
+		//navigate backward
+		js.executeScript("window.history.back()");
+//		driver.navigate().back();
+		
+		//navigate forward
+		js.executeScript("window.history.forward()");
+//		driver.navigate().forward();
+		
+		//to refresh page 
+		js.executeScript("window.history.go(0)"); 
+		driver.navigate().refresh();
+		
+		driver.close();
 
 	}
 
